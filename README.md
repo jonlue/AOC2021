@@ -2,8 +2,8 @@
 [Advent of Code 2021](https://adventofcode.com/2021)
 ## Days
 <pre>
-* Day  1 
-* Day  2 
+* Day  1 ⭐⭐
+* Day  2 ⭐⭐
 * Day  3 
 * Day  4 
 * Day  5 

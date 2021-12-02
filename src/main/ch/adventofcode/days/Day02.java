@@ -9,11 +9,37 @@ public class Day02 extends AOCRiddle {
 
     @Override
     protected String solve1() {
-        throw new UnsupportedOperationException();
+        int depth = 0;
+        int x = 0;
+        for(String s : getInput().split("\n")){
+            int value = Integer.parseInt(s.split(" ")[1]);
+            if(s.startsWith("f")){
+                x += value;
+            }else if(s.startsWith("d")){
+                depth += value;
+            }else {
+                depth -= value;
+            }
+        }
+        return String.valueOf(x * depth);
     }
 
     @Override
     protected String solve2() {
-        throw new UnsupportedOperationException();
+        int aim = 0;
+        int depth = 0;
+        int x = 0;
+        for(String s : getInput().split("\n")){
+            int value = Integer.parseInt(s.split(" ")[1]);
+            if(s.startsWith("f")){
+                x += value;
+                depth += value * aim;
+            }else if(s.startsWith("d")){
+                aim += value;
+            }else {
+                aim -= value;
+            }
+        }
+        return String.valueOf(x * depth);
     }
 }
