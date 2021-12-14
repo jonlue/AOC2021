@@ -32,7 +32,6 @@ public class Day12 extends AOCRiddle {
     private int countExits(String position, Map<String, Integer> visited, int times) {
         int count = 0;
         if (position.equals(GOAL)) {
-            System.out.println(visited);
             return 1;
         }
 
